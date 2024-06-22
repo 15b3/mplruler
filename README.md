@@ -22,3 +22,10 @@ Although they do not remain on the final figure, auxiliary lines and scales make
 With grid lines, it is easy to keep track of the width and position of the axes.
 
 ![both](./images/both.png)
+
+
+## Installation
+
+```
+pip install mplruler
+```
