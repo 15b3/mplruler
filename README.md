@@ -29,3 +29,57 @@ With grid lines, it is easy to keep track of the width and position of the axes.
 ```
 pip install mplruler
 ```
+
+## Usage
+
+```python
+from mplruler import add_ruler, add_grid
+
+# make figure and plot something
+fig, ax = plt.subplots()
+ax.plot([1, 2, 4, 9])
+ax.plot([0, 1, 2, 3])
+
+# call one or both functions.
+add_ruler(fig)
+add_grid(fig)
+```
+
+## API
+
+### add_ruler
+
+```
+fig : matplotlib.figure.Figure
+    draw ruler on the figure
+disable : bool (default: False)
+    do nothing if true
+increments: float (default: 0.1 inches)
+    increments of ruler in inches
+bar_height: float (default: 0.1 inches)
+    bar height in inches
+color: (default: "gray")
+    color
+lw: float (default: 1.0)
+    line weight
+zorder: float (default: 9.0)
+    zorder of ruler
+```
+
+### add_grid
+
+```
+fig : matplotlib.figure.Figure
+    draw grid on the figure
+disable : bool (default: False)
+    do nothing if true
+num_grid: int (default: 10)
+color: (default: "gray")
+    color
+lw: float (default: 1.0)
+    line weight
+ls: (default: dotted)
+    line style
+zorder: float (default: 9.0)
+    zorder of grid
+```
